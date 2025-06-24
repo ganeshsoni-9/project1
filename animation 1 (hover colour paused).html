@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background: red;
+            animation-name: color;
+            animation-iteration-count: infinite;
+            animation-duration: 0.5s;
+            transition: linear;
+            text-align: center;
+            position: relative;
+            left: 200px;
+        }
+        .box1:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes color{
+            from{
+                background-color: pink;
+            }
+            to{
+                background: yellowgreen;
+            }
+            to{
+                background-color: blue;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <h1>TASK-1 SMOOTH HOVER ANIMATION </h1>
+    <br>
+    <div class="box1">
+        <h2 style="text-align: center; position: relative; top: 80px;">HELLO GUYS</h2>
+    </div>
+</body>
+</html>
