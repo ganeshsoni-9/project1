@@ -3,355 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Start Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        .header{
-            height: 20px;
-            width: 100%;
-            background-color: wheat;
-         }
-         .call{
-            position: absolute;
-            left: 50px;
-         }
-        .message{
-            position: absolute;
-            left: 190px;
-        }
-    .location{
-        position: absolute;
-        left: 320px;
-    }
+    <head>
+        <style>
+            *{
+                position:relative;
 
-    .icons{
-        position: absolute;
-        left: 750px;
-        bottom: 400px;
-    }
-    .box1{
-        height: 70px;
-        width: 100%;
-        background: rgb(233, 92, 233);
-    }
-    .left{
-        position: absolute;
-        left: 450px;
-        color: black;
-        top: 45px;
-        color: white;
-    }
+            }
+            .header{
+            height:20px;
+            background-color:beige;
+            display:flex;
+            color:violet;
+            position:relative;
+             top:-25px;left:60px
+            }
+            .home{
+                height:50px;
+                width:1000px;
+                background-color: blueviolet;
+                top:-10px;
+            }
+            .content1{
+                height:250px;
+                width:300px;
+                background-color:whitesmoke;
+                opacity: 0.8;
+                top:-330px;
+                left:100px;
 
-    .box2{
-        height: 660px;
-        width: 100%;
-        background-color: rgb(161, 179, 179);
-    }
-    .box3{
-        height: 250px;
-        width: 250px;
-        background-color: rgb(239, 233, 233);
-        position: absolute;
-        top: 150px;
-        left: 150px;
-    }
+            }
+            .line{
+                height:1px;
+                width:130px;
+                background-color:blueviolet;
+                left:10px;
+                
+            }
+            .line2{
+                height:1px;
+                width:130px;
+                background-color:blueviolet;
+                left:90px;
+                bottom:1050px;
 
-    .square1{
-        height: 100px;
-        width: 150px;
-        background-color: rgb(248, 241, 241);
-        border-radius: 10px;
-        position: absolute;
-        top: 520px;
-        left: 500px;
-    }
-     .square2{
-        height: 100px;
-        width: 150px;
-        background-color: rgb(248, 241, 241);
-        border-radius: 10px;
-        position: absolute;
-        top: 520px;
-        left: 660px;
-    }
-    .square3{
-        height: 100px;
-        width: 150px;
-        background-color: rgb(248, 241, 241);
-        border-radius: 10px;
-        position: absolute;
-        top: 630px;
-        left: 500px;
-    }
-    .square4{
-        height: 100px;
-        width: 150px;
-        background-color: rgb(248, 241, 241);
-        border-radius: 10px;
-        position: absolute;
-        top: 630px;
-        left: 660px;
-    }
+                
+            }
+            .feature1{
+                height:150px;
+                width:180px;
+                border:solid black 1px;
+                top:-920px;
+                left:430px;
+                border-radius: 14px;
+            }
+            .feature2{
+                height:150px;
+                width:180px;
+                border: solid black 1px;
+                top:-1070px;
+                left:650px;
+                border-radius: 13px;
+            }
+            .feature3{
+                 height:150px;
+                width:180px;
+                border: solid black 1px;
+                top:-1040px;
+                left:430px;
+                border-radius:13px;
+            }
+            .feature4{
+                  height:150px;
+                width:180px;
+                border: solid black 1px;
+                top:-1190px;
+                left:630px;
+                border-radius:13px;
+            }
+            .line3{
+                height:1px;
+                width:130px;
+                background-color:blueviolet;
+                top:-1240px;
+                left:150px
 
-    .boxes{
-        height: 230px;
-        width: 100%;
-        background-color: antiquewhite;
-    }
-    .pradhan{
-        position: absolute;
-        top: 770px;
-        left: 780px;
-    }
-    .box5{
-        height: 300px;
-        width: 100%;
-        background: wheat;
-    }
-    .ganesh5{
-        height: 250px;
-        width: 200px;
-        background-color: rgb(247, 243, 243);
-        border-radius: 10px;
-        position: absolute;
-        top: 1000px;
-        left: 400px;
-    }
-
-    .sarpanch1{
-        height: 4px;
-        width: 170px;
-        background-color: white;
-        position: absolute;
-        top: 1150px;
-        left: 420px;
-        border: 1px solid black;
-        border-radius: 10px;
-    }
-    .sarpanch2{
-        height: 4px;
-        width: 150px;
-        background-color: rgb(49, 9, 249);
-        position: absolute;
-        top: 1150px;
-        left: 420px;
-        border-radius: 10px;
-        border: 1px solid black;
-    }
-    .sarpanch3{
-        height: 5px;
-        width: 170px;
-        background-color: white;
-        position: absolute;
-        top: 1180px;
-        left: 420px;
-        border-radius: 10px;
-        border: 1px solid black;
-    }
-    .sarpanch4{
-        height: 4px;
-        width: 150px;
-        background: blue;
-        position: absolute;
-        top: 1181px;
-        left: 420px;
-        border-radius: 10px;
-        border: 1px solid black;
-    }
-
-    .box6{
-        height: 500px;
-        width: 100%;
-        background-color: rgb(195, 169, 169);
-    }
-    .box7{
-        height: 220px;
-        width: 400px;
-        background: white;
-        position: absolute;
-        top: 1310px;
-        border-radius: 10px;
-        left: 300px;
-    }
-    .box8{
+            }
+            .project1{
+                height:0.5px;
+                width:0.5px;
+                top:-1200px;
+            }
+            .project2{
+                top:-1202px;
+                left:500px
+            }
+            .project3{
+                top:-1180px;
+                left:1px
+            }
+            .project4{
+                top:-1553px;
+                left:500px
+            }
+            .about{
+                height:800px;
+                width:1000px;
+                border:solid black 1px;
+                top:-1500px;
+                
+            }
+            .about2{
+                height:400px;
+                width:350px;
+                border:solid white 1px;
+                top:-650px;
+                left:100px;
+            }
+            .about3{
+                height:400px;
+                width:350px;
+                border:solid white 1px;
+                top:-406px;
+                left:350px;
+                background-color: white;
+            } 
+            .survey1{
+                height:8px;
+                width:240px;
+                border:solid black 1px;
+                top:-650px;
+                left:400px;
+            }
+            .survey11{
+               height:8px;
+                width:200px;
+                border:solid black 1px;
+                top:-661px;
+                left:400px;
+                background-color: blueviolet;
+            }
+            .survey2{
+                height:8px;
+                width:240px;
+                border:solid black 1px;
+                top:-618px;
+                left:400px;
+            
+            }
+            .survey21{
+                height:8px;
+                width:184px;
+                border:solid black 1px;
+                top:-629px;
+                left:400px;
+                background-color: blueviolet;
+            }
+            .survey3{
+                height:8px;
+                width:240px;
+                border:solid black 1px;
+                top:-598px;
+                left:400px;
+            }
+            .survey31{
+                 height:8px;
+                width:205px;
+                border:solid black 1px;
+                top:-609px;
+                left:400px;
+                background-color: blueviolet;
+            }
+            .contact{
+                height:800px;
+                width:1000px;
+                
+                box-shadow: 2px 2px 2px rgb(94, 94, 102);
+                top:-1440px;
+            }
+            .contactM{
+                 height: 500px;
+                 width:200px;
+                 border:solid black 1px;
+                 top:100px;
+                 left:150px;
+            }
+            .contactf{
+                height:500px;
+                width:500px;
+                border:solid black 1px;
+                left:210px;
+                top:-620px;
+                border-radius: 12px;
+            }
+            .box8{
         height: 100px;
         width: 400px;
         background: rgb(143, 63, 143);
         position: absolute;
-        top: 1550px;
-        left: 300px;
+        top: 3350px;
+        left: 370px;
         border-bottom-left-radius: 10px;
          border-bottom-right-radius: 10px;
-    }
-    .icn{
+            }
+            .icn{
         display: flex;
         justify-content: space-between;
     }
-    
-    
-    
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="call">
-            <i style="font-size: x-small;" class="fa-solid fa-phone-volume"></i> 210-220-23040
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <p><i style="font-size:10px; " class="fa-solid fa-phone-volume"> -0512-68137  | </i></p>
+            <p><i style="font-size:10px;position:relative;left:10px;" class="fa-solid fa-message"> -inf0@company.com  |  </i></p>
+            <p><i style="font-size:10px;position:relative;left:10px;" class="fa-solid fa-location-dot"> Sunny Isles Beach,FL 33160,USA  |  </i></p>
+            <p><i style="position:relative;left:100px;" class="fa-brands fa-facebook">   </i></p>
+            <p><i style="position:relative;left:110px;" class="fa-brands fa-github"> </i></p>
+            <p><i style="position:relative;left:120px;" class="fa-brands fa-linkedin"> </i></p>
+            <p><i style="position:relative;left:130px;" class="fa-brands fa-square-instagram"> </i></p>
+            <p><i style="position:relative;left:260px;">. </i></p>
         </div>
+        <div class="home">
+            <img style="font-size: px; height:40px;left:55px;bottom:-5px;" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/logo.png?raw=true">
+            <p style="left:350px;font-size: 11px; color:antiquewhite;top:-45px;"><b> HOME</b></p>
+            <p style="left:430px;font-size: 11px; color:antiquewhite;top:-68px;"><b> SERVICE</b></p>
+            <p style="left:515px;font-size: 11px; color:antiquewhite;top:-90px;"><b> PROJECTS</b></p>
+            <p style="left:610px;font-size: 11px; color:antiquewhite;top:-112px;"><b> PAGES</b></p>
 
-        <div class="message">
-            <i style="font-size: x-small;" class="fa-solid fa-message"></i> info@tech.com
         </div>
+        <div class="box1">
+         <img style="font-size: 20px; height:400px;width:400px;left:100px;top:-500px" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/banner-left.png?raw=true">
+         <div class="content1">
+            <p style="font-size: 8px; top:5px;left:10px;color:blueviolet"><b>SEO DIGITAL AGENCY</b></p>
+            <div class="line">
+                <p style="font-size:15px;left:13px;">Dive </p>
+                <p style="font-size:15px; left:45px;top:-32px;color:blueviolet">Into The SEO </p>
+                <p style="font-size:15px; left:10px;top:-43px;">World </p>
+                 <p style="font-size:15px; left:53px;top:-75px; color:rgb(236, 20, 190) ;">With Tale </p>
+                <p style="font-size: 7px;top:-80px;">tale is the best seo agency webite template using Bootstep v.53.3. for your company bibv<br>bubug bued gudeud iduibd uuied iuudgie <a href="https://www.startupindia.gov.in/">home,</a><a href="https://www.startupindia.gov.in/"> About</a> and<a href="https://www.startupindia.gov.in/">FAQs</a></p>
+                <button style=" font-size:5px;height:14px; cursor: pointer;;top:-10px;border-radius: 10px; border:none; color:white;background-color: blueviolet;">Discover More</button>
+                <button style=" font-size:5px;height:14px; top:-10px;cursor: pointer;;border-radius: 10px; border:none; background-color:rgb(236, 20, 190);color:white;">Check Our FAQs</button>
+                
+            </div>
+         </div>
+            </div>
+            <div class="box2">
+                <img style="font-size: 30px;height:400px;width:450px; top:-670px;left:400px" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/banner-right.png?raw=true" >
+            </div>
+            <div class="box3">
+                <img  style="height:100px; width:300px; top:-550px;opacity: 0.6;"src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/cta-bg.jpg?raw=true">
+                <img  style="height:200px;width:250px;top:-500px ;left:-300px;;opacity: 0.85;"src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/happyclient-01.jpg?raw=true">
+                <p style="font-size: 20px; top:-950px;left:100px"><b>We Provide</b></p>
+                <p style="font-size: 20px; bottom:993px;; left:204px; color:blueviolet"><b>Different Services &</b></p> 
+                <p style="font-size: 20px; bottom:1010px;; left:90px; color:rgb(236, 20, 190)"><b>Features</b></p>   
+                <p style="font-size: 20px; bottom:1052px;; left:170px; "><b>For Your Agency</b></p>   
+                <div class="line2">
+                    <p style="font-size: 10px;color:gray ;">lorem bvyufg hdby hdyggudh egdug ugdu</p>
 
-        <div class="location">
-            <i style="font-size: x-small;" class="fa-solid fa-location-dot"></i>Society no.15, jhalandar
-        </div>
+                </div>
+                <div></div>
+            </div>
+            <div class="feature1">
+             <img style="font-size: 10px;border-radius: 50%;" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/services-01.jpg?raw=true">
+             <p style="border-radius: 0;"><b>Discover more on <br>current SEO Trends</b></p>
+            </div>
+            <div class="feature2">
+                <img style="font-size: 10px;border-radius: 50%;" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/services-02.jpg?raw=true">
+                <p style="border-radius: 0px;"></p>
+                <p><b>Real Time Big data <br>Analysis</b></p>
+            </div>
+            <div class="feature3">
+                <img style="font-size: 10px;border-radius: 50%;"src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/services-03.jpg?raw=true">
+                <p style="margin-left: 10px;"><b>Practise Data <br>Analysis & <br>prediction</b></p>
+            </div>
+            <div class="feature4">
+                 <img style="font-size: 10px;border-radius: 50%;" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/services-04.jpg?raw=true">
+                 <p style="margin-left: 10px;"><b>SEO Marketing & <br>Social Media </b></p>
+            </div>
+            <p style="top:-1100px; left:150px; font-size: 20px;"><b>Discover Our</b></p>
+            <p style="top:-1143px; left:273px; font-size: 20px;color: blueviolet;"><b>work</b></p>
+            <p style="top:-1186px; left:330px; font-size: 20px;"><b>&</b></p>
+            <p style="top:-1228px; left:354px; font-size: 20px;color: rgb(236, 20, 190);"><b>Projects</b></p>
+            <div class="line3">
+                  <p style="color:gray;font-size: x-small;"> lhichiehc cuucgue gcuc cugeuc guecgucgi ciehcich hciehic ciehci</p>
 
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-github"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-instagram"></i>
-        </div>
-    </div>
-
-    <div class="box1">
-        <div class="tale">
-            <i style="color: white; position: absolute; left: 70px; top: 40px;" class="fa-solid fa-graduation-cap"></i>
-            <p style="position: absolute; left: 100px; top: 40px;">TALE</p>
-        </div>
-
-        <div class="left">
-            Home &nbsp; &nbsp; &nbsp; Services &nbsp; &nbsp; &nbsp; Projects &nbsp; &nbsp; &nbsp; Pages &nbsp; &nbsp; &nbsp; Contact
-        </div>
-    </div>
-
-    <div class="box2">
-        <img style="height: 330px; width: 100%;" src="https://imgs.search.brave.com/VI3dNA2oycqvDl8sHLdw5Xo-8s1cP4-tGTvfi572j14/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci8xMzEv/NDg1L0hELXdhbGxw/YXBlci1zcXVhcmUt/M2QtdHVubmVsLXRo/dW1ibmFpbC5qcGc" alt="">
-    </div>
-
-    <div class="box3">
-        <p style="color: purple; font-size: small; text-align: center; margin-top: 15px;">SEO DIGITAL AGENCY</p> <br> <hr>
-        <p style="color: black; position: absolute; left: 30px; font-size: large;"><b>Dive</b></p> 
-        <p style="color: blue; position: absolute; left: 70px; top: 51px;"> <b>Into the CEO</b></p> 
-        <br>
-        <p style="color: black; position: absolute; left: 30px; top: 70px;"><b>World</b></p> <p style="color: purple; position: absolute; left: 80px; top: 70px;"><b>With Tale</b></p>
-        <br><br>
-        <p style="font-size: xx-small; position: absolute; left: 30px;">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Animi dolores nesciunt <br> aliquid qui totam a eum laudantium <br> provident quam ut, fuga velit. <br> Aspernatur explicabo esse iusto assumenda <br> officia quaerat accusamus enim officiis repellat.</p>
-        <button style="width: 70px; background-color: blue; color: white; border-radius: 20px; position: absolute; top: 190px; left: 20px;"><b>Real</b></button>
-        <button style="width: 70px; background-color: purple; color: white; border-radius: 20px; position: absolute; top: 190px; left: 120px;"><b>FAQ's</b></button>
-    </div>
-
-    <div class="box4">
-        <img style="height: 330px; width: 100%; position: absolute; top: 420px;" src="https://imgs.search.brave.com/Cw42qx0uHpLFTPB6F5DExQjGeF6HDboDnM-KzZ_OA0I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/NzE3NTc5My9waG90/by9hYnN0cmFjdC13/YXZ5LW9iamVjdC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/V05QU1dQLWZ2dnNl/RllPQ3ZER1ZIWUYy/X1FWOENyTHNuVVBk/djdkbDBIND0" alt="">
-    </div>
-
-    <div class="paragraph">
-        <p style="color: black; position: absolute; left: 450px; top: 450px; "><b>We Provide</b></p>
-        <p style="color: blue; position: absolute; left: 532px; top: 450px;"><b>Different Services</b></p>
-        <p style="color: black; position: absolute; left: 660px; top: 450px;"><b>&</b></p>
-        <p style="color: purple; position: absolute; left: 450px; top: 470px;"><b>Features</b></p>
-        <p style="color: black; position: absolute; left: 515px; top: 470px;"><b>For Your Agency.</b></p>
-        <p style="font-size: x-small; position: absolute; top: 500px; left: 450px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-
-    <div class="square1">
-        <i style="font-size: 30px; position: absolute; left: 50px; margin: 10px; color: purple;" class="fa-brands fa-cc-discover"></i>
-        <p style="position: absolute; top: 50px; font-size: x-small; margin: 5px;"><b>Discover more on Current SEO Trends.it's the marketing tool.</b></p>
-    </div>
-    
-    <div class="square2">
-        <i style="font-size: 30px; position: absolute; left: 50px; margin: 10px; color: purple;" class="fa-solid fa-magnifying-glass-dollar"></i>
-        <p style="position: absolute; top: 50px; font-size: x-small; margin: 5px;"><b>Real-time big data Analysis.it's the marketing tool.</b></p>
-    </div>
-
-    <div class="square3">
-        <i style="font-size: 30px; position: absolute; left: 50px; margin: 10px; color: purple;" class="fa-solid fa-file-zipper"></i>
-        <p style="position: absolute; top: 50px; font-size: x-small; margin: 5px;"><b>Precise Data Analysis & Prediction.it's the marketing tool.</b></p>
-    </div>
-
-    <div class="square4">
-        <i style="font-size: 30px; position: absolute; left: 50px; margin: 10px; color: purple;" class="fa-solid fa-desktop"></i>
-        <p style="position: absolute; top: 50px; font-size: x-small; margin: 5px;" ><b>SEO Marketing & Social Media.it's the working tool.</b></p>
-    </div>
-
-
-    <div class="boxes">
-        <p style="color: black; position: absolute; left: 50px; position: absolute; top: 770px;"><b>Discover Our</b></p>
-        <p style="color: purple; position: absolute; left: 145px; position: absolute; top: 770px;"><b>Site</b></p>
-        <p style="color: black; position: absolute; left: 188px; position: absolute; top: 770px;"><b>&</b></p>
-        <p style="color: purple; position: absolute; left: 205px; position: absolute; top: 770px;"><b>Tour Places</b></p>
-    </div>
-
-    <div class="ganesh1">
-        <img style="height: 120px; border-radius: 10px; position: absolute; top: 820px; left: 20px;" src="https://imgs.search.brave.com/taHjB9qw8-13cauYG8NIZZ65SgrxEjQuCN6TGJfPpMM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDYv/ODM3LzE4Ny9zbWFs/bC90aGUtc2NlbmVy/eS1vZi10aGUtZXZl/bmluZy1zdW5zZXQt/YWxvbmctdGhlLW1l/a29uZy1yaXZlci1h/dC10aGUtc2t5d2Fs/ay1pbi1jaGlhbmct/a2hhbi1wcm92aW5j/ZS1mcmVlLXBob3Rv/LmpwZw" alt="">
-        <p style="font-size: small; position: absolute; top: 950px; left: 50px;"><b>Desert Region <br>Website Layouts. </b></p>
-    </div>
-
-    <div class="ganesh2">
-        <img style="height: 120px; border-radius: 10px; position: absolute; top: 820px; left: 215px;" src="https://imgs.search.brave.com/IcHahWn96g3qnotZ-gIcUjRUpm422EOzsN8RXbO3pvY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzUyLzkwLzc4/LzM2MF9GXzg1Mjkw/Nzg0NV8yRDd2RTFP/VjlpT1V4akJhSjl6/ZHg0NGE2anpaOEJj/Mi5qcGc" alt="">
-        <p style="font-size: small; position: absolute; top: 950px; left: 260px;"><b>Amazon like Forest <br> HTML Templates</b></p>
-    </div>
-
-    <div class="ganesh3">
-        <img style="height: 120px; border-radius: 10px; position: absolute; top: 820px; left: 445px;" src="https://imgs.search.brave.com/kjodSVfN8JTzuf2cFSaGIjxNLOXAX3xg6v5wb-8Yy9Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzkv/MjEyLzEwOC9zbWFs/bC9haS1nZW5lcmF0/ZWQtYmVhdXRpZnVs/LW5hdHVyZS1tb3Vu/dGFpbi1zY2VuZXJ5/LXByb2Zlc3Npb25h/bGdyYXBoeS1waG90/by5qcGc" alt="">
-        <p style="font-size: small; position: absolute; top: 950px; left: 490px;" ><b>SunSet Scene <br>CSS Templates</b></p>
-    </div>
-
-    <div class="ganesh4">
-        <img style="height: 120px; border-radius: 10px; position: absolute; top: 820px; left: 640px;" src="https://imgs.search.brave.com/KbmlKfWCvKC7I2ZMeCwqTAcJWODnnIuz_zCGQfJoAow/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjIv/NzUyLzY4Ni9zbWFs/bC9lYXJseS1tb3Ju/aW5nLXNjZW5lcnkt/Zmxvd2Vycy1ibG9v/bWluZy1ncmVlbi1n/cmFzcy1zcHJpbmct/Y29uY2VwdC1nZW5l/cmF0aXZlLWFpLXRl/Y2hub2xvZ3ktZnJl/ZS1waG90by5qcGc" alt="">
-        <p style="font-size: small; position: absolute; top: 950px; left: 690px;" ><b>Beautiful Scenery <br> Website Layouts</b></p>
-    </div>
-
-    <div class="pradhan">
-    <button style="color: white; padding: 2px; background-color: purple; border-radius: 100px;">></button>
-    <button style="color: white; padding: 2px; background-color: purple; border-radius: 100px;"><b><</b></button>
-    </div>
-
-    <div class="box5">
-        <img style="height: 250px; width: 200px; border-radius: 10px; position: absolute; left: 50px; top: 1000px; left: 200px;" src="https://imgs.search.brave.com/HBrLfJ7-9GSP3k4Xcu2NHMVIJGyftoPnMjwu0G6d48M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMTE3/NDQ3LmpwZw" alt="">
-    </div>
-    
-<div class="ganesh5">
-<p style="color: blue; margin: 10px; font-size: small;"><b>More About Us & what We Offer.</b></p><hr>
-<p style="font-size: xx-small; margin: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab alias sapiente corrupti magnam ipsa quod illo dolor ullam ea aliquam error, blanditiis labore placeat, nam debitis eius, officiis vero tempora.</p>
-</div>
-
-<div class="sarpanch1">
-    <p style="font-size: x-small; position: absolute; bottom: 8px; ">Marketing</p>
-    <p style="font-size: xx-small; position: absolute; left: 150px; bottom: 8px;">90%</p>
-</div>
-
-<div class="sarpanch2">
-</div>
-
-<div class="sarpanch3">
-</div>
-
-<div class="sarpanch4">
-<p style="font-size: xx-small; position: absolute; bottom: 8px; ">Digital media</p>
-<p style="font-size: xx-small; position: absolute; left: 150px; bottom: 8px;">50%</p>
-<p style="font-size: xx-small; position: absolute; top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing  Corporis voluptatum, culpa quod sunt suscipit.</p>
-</div>
-
-
-<div class="box6">
-</div>
-<div class="map">
-    <img style="height: 350px; width: 200px; position: absolute; top: 1310px; left: 30px; border-radius: 10px;" src="https://imgs.search.brave.com/CyhiacHx7uW-LjVrJezsN7J3TyXnsUgI7amhflMjHdw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9ob25n/LWtvbmctbWFwLTEx/NTgyMzQ2LmpwZw" alt="">
-</div>
-
-<div class="box7">
-    <p style="color: blue; font-size: large; margin: 10px; text-align: center;">Contact us & get in Touch</p>
-    <button style="width: 150px; background-color: wheat; border-radius: 50px; position: absolute; left: 30px;">Your name</button>
-    <button style="width: 150px; background-color: wheat; border-radius: 50px; position: absolute; left: 230px;">Your surname</button>
-    <button style="width: 150px; background-color: wheat; border-radius: 50px; position: absolute; top: 70px; left: 30px;">Your E-mail</button>
-    <button style="width: 150px; background-color: wheat; border-radius: 50px; position: absolute; top: 70px; left: 230px;">Subject</button>
-    <textarea style="width: 340px; height: 70px; position: absolute; top: 100px; left: 30px;" name="Your message" id="">Your message</textarea>
-    <button style="background-color: blue; color: white; position: absolute; top: 185px; width: 345px; border-radius: 20px; left: 30px; padding: 4px;">Send Message Now</button>
-</div>
-
-<div class="box8">
+            </div>
+            <div class="project1">
+                <img style="font-size: 0px;" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/projects-01.jpg?raw=true">
+            </div>
+            <div class="project2">
+               <img src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/projects-02.jpg?raw=true">
+            </div>
+            <div class="project3">
+             <img src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/projects-03.jpg?raw=true">
+            </div>
+            <div class="project4">
+             <img src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/projects-04.jpg?raw=true">   
+            </div>
+            <div class="about">
+              <img style="height:800px;width:1000px;" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/infos-bg.jpg?raw=true">
+              <div class="about2">
+                <img style="height:400px;width:350px;" src="https://github.com/ankur-upflairs/batch-03-16th-june-2025/blob/main/Assignments/startup%20seo%20assests/images/left-infos.jpg?raw=true">
+                <div class="about3">
+                  <p style="margin-left: 50px;font-size: 20px;"><b>More</b></p>
+                  <p style="margin-left: 100px;font-size: 20px;top:-44px;color:blueviolet"><b>About Us</b></p>
+                  <p style="margin-left: 190px;font-size: 20px;top:-86px;"><b>& what</b></p>
+                  <p style="margin-left: 260px;font-size: 20px;top:-130px;color:rgb(236, 20, 190)"><b>we</b></p>
+                  <p style="margin-left: 45px;font-size: 20px;top:-146px;color:rgb(236, 20, 190)"><b>Offer</b></p>
+                  <p style="font-size: 7px; top:-150px;left:50px;">jbfufurf bfuuf uhuehff hfueff wow9 uhui fiuw ifhf fhfh o229 uhdu ehde eoidh<br>ufgufr uhfiehf uhfiefhf uhfe heufh8 hfuhf hufuihfei uehfifh ejfufhi uhfi uhfif<br>uhuhg hfuh8g uhf8fu uhff8rg uhfrf8r uhf8r8 hf8urf8f ufh8rf8r hufhhf8 uihg <br><a href="https://www.behance.net/search/projects/about%20us%20page">Contact Us</a>thank you</p>
+                  <p style="font-size: 15px;top:-139px;color:blueviolet"><b>Marketing</b></p>
+                  <p style="font-size: 15px;top:-164px; left:240px;color:blueviolet"><b>90%</b></p>
+                   <p style="font-size:15px; ;top:-141px; left:230px;color:blueviolet"><b>80%</b></p> 
+                   <p style="font-size: 15px;top:-179px;color:blueviolet"><b>Digital Media</b></p> 
+                   <p style="font-size: 15px;top:-171px;color:blueviolet"><b>Social Media Managing</b></p> 
+                   <p style="font-size:15px; ;top:-199px; left:250px;color:blueviolet"><b>95%</b></p>   
+                   <p style="font-size: 12px; top:-160px;left:0px;">njich huhcu cbuhc chuchuc bcuhcu bcuchie houchuoc cuihc cgiuc ucuhc uhcuic hcuc <br>hdui <br>uhcudcgh uhuihc bvuihv cuihc chuhc chuhc cuhc wiuo wihdoh hcu iwh uihdwe woh <br>uich9ec hcohc hcoiuhjcoi coijicj oicjioc icjiocj ocjpwoc wiocjic oicjiocj coijwioc </p>     
+           </div> 
+                <div class="survey1"></div>
+                <div class="survey11"></div>
+                <div class="survey2"></div>
+                <div class="survey21"></div>
+                <div class="survey3"></div>
+                  <div class="survey31"></div>
+              </div>
+            </div>
+            <div class="contact">
+             <div class="contactM">
+                <img style="height:515px;width:205px; left:-2px;top:-2px;" src="data:image/jpeg;base64,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">
+             <div class="contactf">
+                <p style="font-size: 20px; left:100px;color:black"><b>Contact Us &</b></p>
+                <p style="font-size: 20px; left:221px; top:-42px;color:rgb(236, 20, 190)"><b>Get In Touch</b></p>
+               
+               <button style=" left:50px;width:160px; height: 25px;background-color:wheat ;border-radius: 50px;position :absolute; cursor: pointer;text-align: left;">your name...</button>
+               <button style=" left:220px;width:160px; height: 25px;background-color:wheat ;border-radius: 50px;position :absolute; cursor: pointer;text-align: left;">your surname...</button>
+               <button style=" bottom:330px;left:50px;width:190px; height: 25px;background-color:wheat ;border-radius: 50px;position :absolute; cursor: pointer;text-align: left;">your email...</button>
+               <button style=" bottom: 330px; left:250px;width:150px; height: 25px;background-color:wheat ;border-radius: 50px;position :absolute; cursor: pointer;text-align: left;">subject...</button>
+               <textarea style="width: 340px; height: 70px; position: absolute; top: 200px; left: 40px;" name="Your message" id="">Your message</textarea>
+                <button style="background-color: rgb(72, 151, 224);color:white; position:absolute;top:285px;width:345px;border-radius: 20px;left:40px; padding: 4px;">Send Message Now</button>
+             </div>
+            </div>
+            </div>
+            <div class="box8">
     <div class="icn">
 <i style="margin-left: 40px; margin-top: 30px; font-size: larger; color: white; " class="fa-solid fa-phone-volume"></i> <br>
 <p style="color: white; position: absolute; top: 55px; left: 30px;font-size: x-small;">010-020-03040</p>
@@ -362,9 +356,4 @@
 <p style="color: black; position: absolute; top: 170px; font-size: larger;"> <b>Copyright 2025 Tale STC Agency. All Rights Reserved.Design Template Mutual</b></p>
 </div>
 </div>
-    
-</body>
-</html>
-
-
-
+    </body>
