@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #e0f7fa, #b2ebf2);
+            color: #333;
+        }
+
+        /* TASK 1: Smooth Hover Animation */
+        .task1 {
+            margin-bottom: 50px;
+        }
+
+        .task1 button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #00796b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .task1 button:hover {
+            background-color: #004d40;
+            transform: scale(1.1);
+        }
+
+        /* TASK 2: Rotating Gear */
+        .task2 {
+            margin-bottom: 50px;
+        }
+
+        .task2 .gear {
+            font-size: 100px;
+            display: inline-block;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .task3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+
+        .task3 h1 {
+            opacity: 0;
+            transform: translateX(-100%);
+            animation: fadeInSlide 3s forwards;
+        }
+
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+    
+        body {
+            animation: gradientShift 10s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background: linear-gradient(120deg, #e0f7fa, #b2ebf2);
+            }
+            50% {
+                background: linear-gradient(120deg, #b2dfdb, #80cbc4);
+            }
+            100% {
+                background: linear-gradient(120deg, #e0f7fa, #b2ebf2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="task1">
+        <h2>Task 1: Smooth Hover Animation</h2>
+        <button>Hover Me</button>
+    </section>
+
+    <section class="task2">
+        <h2>Task 2: Rotating Gear</h2>
+        <div class="gear">⚙️</div>
+    </section>
+
+    <section class="task3">
+        <h2>Task 3: Text Fade In + Slide</h2>
+        <br>
+        <h1>Welcome to CSS World</h1>
+    </section>
+</body>
+</html>

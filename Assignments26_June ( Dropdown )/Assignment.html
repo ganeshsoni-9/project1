@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8ebf0;
+    }
+
+    nav {
+      background-color: #2980b9;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav .logo {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      background-color: #2c3e50;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    nav ul li:hover > a {
+      background-color: #34495e;
+    }
+
+    nav ul li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      min-width: 180px;
+      z-index: 100;
+    }
+
+    nav ul li:hover > ul {
+      display: flex;
+    }
+
+    nav ul li ul li {
+      position: relative;
+    }
+
+    nav ul li ul li ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: none;
+    }
+
+    nav ul li ul li:hover > ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="Logo" class="logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li>
+        <a href="#">Work</a>
+        <ul>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li>
+            <a href="#">Photography</a>
+            <ul>
+              <li><a href="#">Nature</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Pets</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Writing</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

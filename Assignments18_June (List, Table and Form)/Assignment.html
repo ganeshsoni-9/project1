@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Overview - A Song of Ice and Fire</title>
+    
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .cover-image {
+            max-width: 800px;
+            margin: 10px 0;
+            margin:  auto;
+            display: block;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        ul {
+            padding-left: 40px;
+            list-style-type: circle;
+        }
+        .book-overview {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .Time_Table > table{
+            width: 80%;
+            margin: 20px auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .form{
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="book-overview">
+        <h1>"A Song of Ice and Fire"</h1>
+        <img src="https://th.bing.com/th/id/OIP.RuNNjylU4LMcoRzslA13cQHaEK?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Cover of A Song of Ice and Fire book" class="cover-image">
+        <p>
+            "A Song of Ice and Fire" by George R.R. Martin is an epic fantasy series that takes readers into the 
+            intricate and often brutal world of Westeros and Essos. It is a tale of power, betrayal, and the struggle for survival, 
+            weaving together complex characters and interlocking narratives in a richly detailed world.
+        </p>
+
+        <h2>Table of Contents</h2>
+        <ol>
+            <li>
+                <strong>Chapter 1: The Seven Kingdoms</strong>
+                <ul>
+                    <li>Introduction to Westeros</li>
+                    <li>Houses and Their Sigils</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Chapter 2: The Wall and Beyond</strong>
+                <ul>
+                    <li>The Night's Watch</li>
+                    <li>Wildlings and the Frozen North</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Chapter 3: Fire and Blood</strong>
+                <ul>
+                    <li>House Targaryen's Legacy</li>
+                    <li>The Return of Dragons</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Chapter 4: The Game of Thrones</strong>
+                <ul>
+                    <li>Political Intrigue and Alliances</li>
+                    <li>The Fight for the Iron Throne</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="Time_Table">
+        <h2>Time Table</h2>
+        <table border="1"  cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Day/Period</th>
+                <th>I<br>9:30 - 10:20</th>
+                <th>II<br>10:30 - 11:20</th>
+                <th>III<br>11:30 - 12:20</th>
+                <th>12:00 - 12:40</th>
+                <th>IV<br></th>
+                <th>V<br></th>
+                <th>VI<br></th>
+                <th>VII<br></th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Eng</td>
+                <td>Math</td>
+                <td>Che</td>
+                <td rowspan="6">Lunch</td>
+                <td colspan="3">LAB</td>
+                <td>Phy</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="3">LAB</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td colspan="3">Library</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td colspan="3">LAB</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td colspan="3">LAB</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td colspan="3">Seminar</td>
+                <td>Sports</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form">
+        <form align="center">
+            <h3>Personal Details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="email">Email id:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" > Male
+            <input type="radio" name="gender" > female <br><br>
+
+            <label for="contact">Contact#:</label>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required><br>
+
+            <h3>Educational Qualification</h3>
+            <label for="degree">Degree:</label>
+            <select name="Degree" id="degree" required>
+                <option value="" disabled selected>--Select Group--</option>
+                <option value="Bachelors">Bachelors</option>
+                <option value="Masters">Masters</option>
+                <option value="PhD">PhD</option>
+            </select>
+            <br><br>
+
+            <label for="engineering">Engineering:</label>
+            <select name="engineering" id="engineering" required>
+                <option value="" disabled selected>--Select Group--</option>
+                <option value="CSE">CSE</option>
+                <option value="EE">EE</option>
+                <option value="CE">CE</option>
+                <option value="ME">ME</option>
+            </select>
+            <br><br>
+
+            <label >Hobbies:</label>
+            <input type="checkbox" name="chess" value="chess"> Playing Chess
+            <input type="checkbox" name="reading" value="reading"> Reading Books
+            <br>
+
+    
+            <label for="address" ><h3>Address</h3></label>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="resume">Attach resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    
+</body>
+</html>
