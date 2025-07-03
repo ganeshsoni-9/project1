@@ -1,70 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dropdown Menu</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .header{
-            height: 100px;
-            width: 100%;
-            background: rgb(94, 131, 146);
-            
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f3f6f9;
         }
-        .ganesh ul li{
-            height: 20px;
-            width: 100px;
-            background-color: rgb(11, 95, 95);
-            text-align: center;
-            padding: 5px;
+        nav{
+            background-color: #3498db;
+            padding: 10px 30px;
+        }
+        .menu {
             list-style: none;
-            border: 1px solid black;
-            float: left;
+            display: flex;
+            gap: -10px;
+            justify-content: flex-end;
+            margin-right: 90px;
         }
-
-        .ganesh ul li:hover{
-            background-color: blue;
-
+        .menu > li {
+            list-style-type: none;
+            position: relative;
+            margin: 0 5px;
+            background-color: #2c3e50;
         }
-
-        .ganesh ul ul{
-            margin-right:  70px;
-            margin-top: 8px;
+        .menu > li > a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            white-space: nowrap;
         }
-        .ganesh ul ul ul{
-            margin-left: 105px;
-            margin-top: 7px;
+        .menu li:hover {
+            background-color: #3b4b5f;
         }
-    </style>
+        .menu li ul {
+            list-style-type: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            background-color: #2c3e50;
+            min-width: 180px;
+            border-top: 1px solid #1a252f;
+        }
+        .menu li:hover > ul {
+            display: block;
+        }
+        .menu li ul li {
+            position: relative;
+        }
+        .menu li ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu li ul li ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: none;
+            background-color: #2c3e50;
+            min-width: 180px;
+        }
+        .menu li ul li:hover > ul {
+            display: block;
+        }
+        .menu li.dropdown > a::after {
+            content: ' ▼';
+            font-size: 10px;
+        }
+        .menu li ul li.dropdown > a::after {
+            content: ' ▶';
+            float: right;
+        }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <div class="ganesh">
-            <ul>
-                <li>home</li>
-                <li>Work</li>
-                <li>About
-                    <ul>
-                       <li>Design</li>
-                       <li>Development</li>
-                       <li>Photography</li>
-                       <li>Writting</li>
-                            <ul>
-                                <li>Nature</li>
-                                <li>people</li>
-                                <li>pets</li>
-                            </ul>
-                        </li>
-                        
-                    </ul>
-                </li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#">Work</a>
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li class="dropdown">
+                        <a href="#">Photography</a>
+                        <ul>
+                            <li><a href="#">Nature</a></li>
+                            <li><a href="#">People</a></li>
+                            <li><a href="#">Pets</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="#">Writing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
 </body>
 </html>
