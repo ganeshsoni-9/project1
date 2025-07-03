@@ -1,292 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOREST DECK</title>
 </head>
 <body>
-  <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">&#127839 Modi Vista Resturant &#127839</h1>
-  <p>Authentic Italian Cuisine Since 1962</p>
-  <p>123 main market Street, Little Italy | &#128381 (555) 123-4567</p>
-  <hr>
-  <h2>Resaturant Food item list</h2>
-  <ul>
-    <li>🍟Frenchfries - only 199</li>
-    <li>🍔Berger - only 199</li>
-    <li>🧀Dhokla - only 99</li>
-    <li>🍝Noodles - only 159</li>
-    <li>🍿Popcorn - only 399</li>
-    <li>🍺Cold Drink - only 59</li>
-    <li>🎂Cake - only 499</li>
-    <li>🥪Pasta - only 159</li>
-  </ul>
-  <hr>
-  <img style="width: 500px; height: 300px;" src="https://imgs.search.brave.com/18SrfeoSgMZeDaloa9oZ33B39_Z4ciFb6hirSPeU9nQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG5p/bWcud2Vic3RhdXJh/bnRzdG9yZS5jb20v/dXBsb2Fkcy9zZW9f/Y2F0ZWdvcnkvMjAy/NS8yL2NvbW1lcmNp/YWxvdXRkb290ZnVy/bml0dXJlLmpwZw" alt="">
-  <p>Our beautiful dining room please welcome this Resaturant</p>
-  <img style="height: 100px;" src="https://imgs.search.brave.com/sv6_ECEAmQYVk2fHiIalpjgumf_itiE9vxZc7tHXYxE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4y/LmNvZGVibGljay5k/ZS9nb2luLXNiLzcy/MHg0ODAvZGFkNDAz/NzdkNC9tb2ViZWwt/bmFjaC10aGVtZW4t/Z28taW4tZGVza3Rv/cC03MjBfNDgwLTMu/anBnL20vMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpP3F1YWxp/dHk9NA.jpeg" alt=""> <img style="height: 100px;" src="https://imgs.search.brave.com/a-X3Xm03NsYh3l1407dOYaKlKGEbPW9M1b1uu0C71es/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXF1aXBwZXJzLmNv/bS9tZWRpYS93eXNp/d3lnL2Z1cm5pdHVy/ZS1jbHAtaGVyby5q/cGc" alt=""> <img style="height: 100px;" src="https://imgs.search.brave.com/aY8ulh6MLsMXkN9yYUre7QvrHitoxrMzLxV_EkV6ufk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8w/Ny8yMC8wNi8wNC9y/ZXN0YXVyYW50LTY0/Nzk4MThfNjQwLmpw/Zw" alt="">
+    <h1 align="center">🍽FOREST DECK🍽 </h1>
+    <p align="center">since 1990</p>
+    <p align="center">📍Address-rooftop hotel vinayak palace, Devipura Rd, opp. bus depot, Sikar, Rajasthan 332001📞0512-7637 </p><hr>
+    <img width="250" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=440,fit=crop/AE026n44xvtqKBDK/img_20210318_115225-d95DaqzpN8UPO8ED.jpg">
+    <img width="250" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=440,fit=crop/AE026n44xvtqKBDK/dsc_7981-YZ9arZ68ryukwXzD.jpg"><hr>
+    <h2>OUR SERVICES</h2>
+    <img width="300" src="data:image/jpeg;base64,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">
+    <p><i>No holiday is complete without the right hotel. If you're looking to plan an unforgettable trip, you'll need to find the right place to stay. Learn how you can book the right hotel for your needs whether you're taking the family on holiday, travelling with someone special or just taking some time away for yourself.</i></p>
+    <img width="350" src="data:image/jpeg;base64,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">
+    <p><i>Fully Refundable Options — Search Stays with Fitness Centres. Find & Compare Deals and You Can Save Big! Trips Made Easier and More Flexible. Easy to Plan and Book Whatever Stay is Best For You.</i></p><hr>
 
-  <h3>About Modi Vista Resaturant</h3>
-  <p>Welcome to Shekhawati vista Resataurant, where tradition meets flavour in every dish. Our Family has been serving authentic. Italian Cousins for over 70 years.</p>
-  <ul>
-    <li>Are you looking for restaurant recommendations (e.g. by location, cuisine, budget)</li>
-    <li>Are you working on a project or assignment about restaurants (e.g., a report, business plan)</li>
-    <li>Do you need a description of a specific restaurant</li>
-    <li>Are you writing content for a restaurant website or review</li>
-  </ul>
+    <h3>MENU</h3>
+    <p><b><u>🍕Main Course</u></b></p>
+    <img width="200" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=400,fit=crop/AE026n44xvtqKBDK/dsc_7844-dOqlKvOv9VixN6oj.jpg">
+    <table border="1" cellspacing="0" width="'300" height="200">
+        <tr>
+            <th>pizza</th>
+            <th>Ingredients</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td align="center">margherita</td>
+            <td>San marzano tomatoes,frsh mozzarela,fresh basil,extra virgin olive oil</td>
+            <td>inr-<i>250</i></td>
 
-  <h4 style="font-size: 30px;"><i class="fa-solid fa-burger"></i> Healthy Berger types -</h4>
-  <table border="solid">
-    <tr>
-  <th><img style="height: 50px;" src="https://imgs.search.brave.com/ZDJuW2D0jvEYjdjEwBLEbxZTi1EK1ZvZxxGwvQdtN6o/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzBiL1JlZERvdF9C/dXJnZXIuanBn" alt=""></th>
-  <th><p>brown patty <br> (Fresh Tomatoes, basil, garlic on roasted bread)</p><br>
-  </tr>
-
-  <tr>
-  <th><img style="height: 50px;" src="https://imgs.search.brave.com/8Kz7wgO-LH56VX4GN8YdwbuK1ML4w4FvODF79rQQDJ4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzQv/MjM1LzY4MC9zbWFs/bC90d28taGFtYnVy/Z2Vycy1hbmQtZnJl/bmNoLWZyaWVzLXNh/dWNlcy1hbmQtZHJp/bmtzLW9uLXJlZC1i/YWNrZ3JvdW5kLWZh/c3QtZm9vZC10b3At/dmlldy1mbGF0LWxh/eS13aXRoLWNvcHlz/cGFjZS1waG90by5q/cGc" alt=""></th>
-  <th><p>Hemberger fried berger <br> (Fresh Tomatoes, basil, garlic on roasted bread)</p></th><br>
-  </tr>
-
-  <tr>
-  <th><img style="height: 50px;" src="https://imgs.search.brave.com/Ln7T7scCpnPnFu2YNYzFxCA3u45nmbMMPsuvxOLDcWc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vaHozZ211cXc2/L2ltYWdlL3VwbG9h/ZC9jX2ZpbGwscV9h/dXRvLHdfNzUwLGZf/YXV0by9mX2F1dG8v/aGVhbHRoaWVzdC1m/YXN0LWZvb2QtYnVy/Z2Vycy0xNi1waHBl/ZzlQNVA.jpeg" alt=""></th>
-  <th><p>Healthy Vegetarian Berger <br> (Fresh Tomatoes, basil, garlic on roasted bread)</p></th> <br>
-  </tr>
-  </table>
-
-  <hr>
-
-<h5 style="font: 30px;">Traditional Pasta.</h5>
-<p>All Pasta is Fresh making fresh daiy in kitchen</p>
-<table border="solid">
-  <caption>Our Signature Pasta Dishes</caption>
-  <tr>
-    <th>Dish Name</th>
-    <th>Description</th>
-    <th>Price</th>
-    <th>Spicy level</th>
-  </tr>
-
-  <tr>
-    <th>Spagheti Carbonara</th>
-    <th>Eggs, panceta, pecorino cheese, black peeper</th>
-    <th><i class="fa-solid fa-dollar-sign"></i>22</th>
-    <th>Mild</th>
-  </tr>
-
-  <tr>
-    <th>Fettucine Alfredo</th>
-    <th>Rich Cream Sauce Cheese</th>
-    <th><i class="fa-solid fa-dollar-sign"></i>20</th>
-    <th>None</th>
-  </tr>
-
-  <tr>
-    <th>penne Arabiata</th>
-    <th>Spicy Tomato sauce with cheese</th>
-    <th><i class="fa-solid fa-dollar-sign"></i>19</th>
-    <th>Hot</th>
-  </tr>
-
-  <tr>
-    <th>Lassage della Casa</th>
-    <th>Layers of Pasta, meat sauce, and three Cheeses.</th>
-    <th><i class="fa-solid fa-dollar-sign"></i>24</th>
-    <th>Mild</th>
-  </tr>
-
-</table>
-
-<hr>
-
-<h6 style="font-size: 20px;"><b>Wood-Fired Pizza</b></h6>
-<p>Our authentic wood-Fired oven reaches 900 degree celcius.</p>
-<p><b>Traditional Pizzas</b></p>
-
-<ul>
-  <li>Margherita - <i class="fa-solid fa-dollar-sign"></i>16</li>
-  <img style="height: 80px;" src="https://imgs.search.brave.com/uusAl6m_Yt3I6mxHW-Zvdsf1IBk0l1SLuw_oEYtqnSE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vdGhlLWluZmF0/dWF0aW9uL2ltYWdl/L3VwbG9hZC9jX2Zp/bGwsd18zODQwLGFy/XzQ6MyxnX2NlbnRl/cixmX2F1dG8vY21z/L05ZQ19VbmFQaXp6/YU5hcG9sZXRhbmFf/R3JvdXBQaXp6YVNo/b3RfRW1pbHlTY2hp/bmRsZXJfMDQ.jpeg" alt="">
-</ul>
-
-<ul>
-  <li>San Marzano tomatoes</li>
-  <li>fresh mozarella</li>
-  <li>Fresh brasil</li>
-  <li>Extra virgin olive oil</li>
-</ul>
-
-<ul>
-  <li>Peperkoni <i class="fa-solid fa-dollar-sign">18</i></li>
-  <img style="height: 80px; width: 120px;" src="https://imgs.search.brave.com/Kua1H_Dou3jL0I1w7BzTlaSR_8FoKBW3wGwDxZWtSTU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzczLzU0/LzYyLzczNTQ2Mjg5/ZjZhZmQ5NWM2ZGNh/N2MxY2UzOWNlM2Vh/LmpwZw" alt="">
-</ul>
-
-<ul>
-  <li>tomato sauce</li>
-  <li>Mozarella cheese</li>
-  <li>Premium pepperkoni</li>
-</ul>
-
-<p>Specially Pizzas</p>
-<table border="solid">
-  <tr>
-    <th><img style="height: 30px;" src="https://imgs.search.brave.com/kwuCj_D6ofCEKuc8jB4rXVDqJnid4GBds4OTWjWgcOI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbGF0/Zm9ybS5sYS5lYXRl/ci5jb20vd3AtY29u/dGVudC91cGxvYWRz/L3NpdGVzLzI2L2No/b3J1cy91cGxvYWRz/L2Nob3J1c19hc3Nl/dC9maWxlLzI1OTM1/NTQwLzIwMjVfMDNf/MzFfQ29zZXR0YV8w/NDkuanBnP3F1YWxp/dHk9OTAmc3RyaXA9/YWxsJmNyb3A9MC4w/MTI1MDAwMDAwMDAw/MDMsMCw5OS45NzUs/MTAwJnc9MjQwMA" alt=""></th>
-    <th><b>Proscuito a Rucola</b> - <i class="fa-solid fa-dollar-sign"></i>24</th> 
-    </th> 
-  </tr>
-
-  <tr>
-    <th><img style="height: 30px;" src="https://imgs.search.brave.com/9DuIJdSMg-Ct9uc1L99MVDiHZ4EhPQiZBwMsldH4bfs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE4/NDE1NTc0NC9mci9w/aG90by9waXp6YXMt/aW4tcGl6emEtb3Zl/bi5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9bVFjOWhrdmtR/ZVhvRGFLOHhmaXJ3/UldVNU1MVDJhdHVW/QlJGcG1LcEZXVT0" alt=""></th>
-    <th><b>Diavola</b><i class="fa-solid fa-dollar-sign"></i>20</th>  
-  </tr>
-
-  <tr>
-    <th><img style="height: 30px;" src="https://imgs.search.brave.com/Lhl29Ha8V1MffAMMkte6gaK2Ba5x-XG2BxJzUWbXMsk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzBmL1Bpenphc19C/dWVub3NfQWlyZXMu/cG5n" alt=""></th>
-    <th> <b>Vegetarian -</b> <i class="fa-solid fa-dollar-sign"></i>19</th>
-  </tr>
-</table>
-
-<hr>
-
-<p><i class="fa-solid fa-cake-candles"></i> <b>Dolci (Deserts)</b></p>
-<p><b>Traditional italian Sweets</b></p>
-
-<table border="solid">
-  <tr>
-    <th rowspan="2"><img style="height: 40px;" src="https://imgs.search.brave.com/IeoUz4AgzpkZKXdqQeceJIRvKLhceNhRoOd6ZruRbpw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTQy/NDAwNTk4L3Bob3Rv/L3Nwcmlua2xlcy1h/cmUtYWxsLWFycm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWVKWm5wSUZQ/ZktxV0dtc0tNbmh4/UjU1TTlGUDFOSUYw/ZlFITnVOaTBiZGc9" alt=""></th>
-    <th><b>Tiramisu</b> - <i class="fa-solid fa-dollar-sign"></i>9</th>
-  </tr>
-
-  <tr>
-    <th>Classic italian desert with coffee soaked lady finger and cocos.</th>
-  </tr>
-
-  <tr>
-    <th><img aria-colspan="2" style="height: 50px;" src="https://imgs.search.brave.com/QPMeebqwCzXtFt3_eGBEMCq5oZ465gk7IhiIaxgbg2c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/LzcwL0Ffc2hlZXRf/Y2FrZS5qcGc" alt="" ></th>
-    <th>cannoli Sicilani</th>
-  </tr>
-</table>
-
-<p><i class="fa-solid fa-mug-hot"></i><b>Beverages</b></p>
-<p>Wine Section</p>
-<p><b>Red Wines</b></p>
-
-<ul>
-  <li>Black Dog - Glass <i class="fa-solid fa-dollar-sign"></i> 12 | <i class="fa-solid fa-dollar-sign"></i> 45</li>
-  <li>Blender pride - <i class="fa-solid fa-dollar-sign"></i> 18 |  <i class="fa-solid fa-dollar-sign"></i> 85</li>
-  <li>Whisky - <i class="fa-solid fa-dollar-sign"></i>20 | <i class="fa-solid fa-dollar-sign"></i> 50</li>
-  <li>Bacardi - <i class="fa-solid fa-dollar-sign"></i> 30 | <i class="fa-solid fa-dollar-sign"></i> 50</li>
-</ul>
-
-<hr>
-
-<p><i class="fa-solid fa-phone-volume"></i> Contact & Hours</p>
-<p>Operating Hours</p>
-
-<table border="solid">
-  <tr>
-    <th>Day</th>
-    <th>Lunch</th>
-    <th>Dinner</th>
-  </tr>
-
-  <tr>
-    <th>Monday-Thursday</th>
-    <th>11:30 AM - 3:00 PM</th>
-    <th>5:00 PM - 11:00 PM</th>
-  </tr>
-
-  <tr>
-    <th>Sunday</th>
-    <th>12:00 PM - 4:00 PM</th>
-    <th>4:00 PM - 9:00 PM</th>
-  </tr>
-</table>
-
-<hr>
-
-<p><i class="fa-solid fa-message"></i><b>Make a Reservation</b></p>
-<p><b>Reserve your table today!</b></p>
-
-<br>
+        </tr>
+        <tr>
+            <td align="center">pepperoni</td>
+            <td>pepperoni pizza,tomato sauce,mozzarella cheese</td>
+            <td >inr-<i>300</i></td>
 
 
-<form action="">Personal Information</form>
-<label for="Full name">Full name</label>
-<br>
-<input type="text">
-<br><br>
-<label for="E-Mail">E-Mail</label>
-<br>
-<input type="text">
-<br><br>
-<label for="Phone number">Phone number</label>
-<br>
-<input type="text">
-<br><br>
+        </tr>
+        <tr>
+            <td align="center">quattro stagioni</td>
+            <td>artichokes,mushrooms,ham,olives</td>
+            <td>inr-<i>320</i></td>
 
-<hr>
 
-<form action="Reservation Details">Reservation Details</form>
-<br>
-<label for="Preferred Date">Preferred Date</label>
-<input type="date">
-<br>
-<label for="Preferred">Preferred</label>
-<input type="time">
-<br>
+        </tr>
 
-<label for="Special Occasion">Special Occasion:-</label>
-<br>
-<input type="radio">
-<label for="No special occasion">No special occasion</label>
-<br>
-<input type="radio">
-<label for="Birthday">Birthday</label>
-<br>
-<input type="radio">
-<label for="Anniversary">Anniversary</label>
-<br>
-<input type="radio">
-<label for="Bussiness Dinner">Bussiness Dinner</label>
-<br>
-<input type="radio">
-<label for="other">other</label>
-<br>
 
-<label for="Dietary">Dietary</label>
-<br>
-<input type="checkbox">
-<label for="Vegeterian">Vegeterian</label>
-<br>
-<input type="checkbox">
-<label for="vegan">vegan</label>
-<br>
-<input type="checkbox">
-<label for="Gluten-Free">Gluten-Free</label>
-<br>
-<input type="checkbox">
-<label for="Diary-Free">Diary-Free</label>
-<br>
+    </table><hr>
+    <img width="200" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=440,fit=crop/AE026n44xvtqKBDK/dsc_7981-YZ9arZ68ryukwXzD.jpg">
+    <p align="center"><b>Our signature Pasta Dishes</b> </p>
+    <table border="1" cellspacing="0" width="'300" height="200">
+        
+        <tr>
+            <th>pasta</th>
+            <th>Ingredients</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td align="center">Spagati carbonrra</td>
+            <td>Eggs,pancetta,percorino,chese,black pepper</td>
+            <td>inr-<i>250</i></td>
+            </tr>
+            <tr>
+            <td align="center">Fettuccine alferedo</td>
+            <td>rice cream sauce with parmesan cheese</td>
+            <td>inr-<i>300</i></td>
+            </tr>
+            <tr>
+            <td align="center">penna Arrabbita</td>
+            <td>Spicy tomato sauce with garlic and red chilies</td>
+            <td>inr-<i>190</i></td>
+            </tr>
+            
 
-<label for="Special Preference/comments">Special Preference/comments</label>
-<textarea style="height: 100px; width: 300px;" name="" id="">please let us know any allergies,seating request, or other needs.... </textarea>
-<br>
-<input type="checkbox">
-<label for="Suscribe to our newsletter for special offers.">Suscribe to our newsletter for special offers.</label>
-<br>
 
-<button style="width: 150px;">Make Reservation</button>
-<button style="width: 150px;">Clear Form</button>
 
-<hr>
+    </table><HR>
+    <h1>🍛MAIN COURSES</h1>
+    <p><b><big>Deck's Special</big></b></p>
+    <table border="1" cellspacing="0" width="'300" height="200">
+        
+        <tr>
+            <th>Dish</th>
+            <th>Ingredients</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td align="center">Osso Buco</td>
+            <td>Chief's special,Braised veal shanks in wine sauce</td>
+            <td>inr-<i>400</i></td>
+            </tr>
+            <tr>
+            <td align="center">chicken parmigiana</td>
+            <td>BReaded chicken with tomatosaucu and cheese</td>
+            <td>inr-<i>420</i></td>
+            </tr>
+            <tr>
+            <td align="center">Veal Marsala</td>
+            <td>Tender veal in mushroom wine sauce</td>
+            <td>inr-<i>450</i></td>
+            </tr>
+            </table><hr>
+            <h2>🍨DESSERTS</h2>
+            <table border="1" cellspacing="0" width="'300" height="200">
+                <tr>
+                    <th>item</th>
+                    <th>price</th>
+                </tr>
+                <tr>
+                    <td>Classic tiramisu</td>
+                    <td>inr-<i>100</i></td>
+                </tr>
+                <tr>
+                    <td>panna cotta</td>
+                    <td>inr-<i>115</i></td>
+                </tr>
+                <tr>
+                    <td>gelato selecction</td>
+                    <td>inr-<i>150</i></td>
+                </tr>
+            </table><hr>
+            <table border="1" cellspacing="0" width="'300" height="200">
+                <h2>🍷 BEVERAGES</h2>
+                <tr>
+                    <th>item</th>
+                    <th>price(per glass)</th>
+                </tr>
+                <tr>
+                    <td>Red Wine</td>
+                    <td>inr-<i>75</i></td>
+                </tr>
+                <tr>
+                    <td>white Wine</td>
+                    <td>inr-<i>90</i></td>
+                </tr>
+                <tr>
+                    <td>espresso</td>
+                    <td>inr-<i>65</i></td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>inr-<i>50</i></td>
+                </tr>
 
-<p style="font-size: 20px;"><b>Follow us</b></p>
-<p><i class="fa-brands fa-linkedin"></i>  <a href="https://www.linkedin.com/in/ganesh-soni-a45575339?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAFT6qpUBuqbUSrwOVobEGVLmCsWTRMyQEVM&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bz%2BAC6PO7SsyyrgKTfzFEwQ%3D%3D">linked in</a></p>
-<p><i class="fa-brands fa-github"></i><a href="https://github.com/ganeshsoni-9/project1.git">Github</a></p>
+            </table><hr>
+            <h2>📞Contacts & Hours</h2>
+            <p><b>operating hours</b></p>
+            <table border="1" cellspacing="0" width="'300" height="200">
+                <tr>
+                    <th>Day</th>
+                    <th>Lunch</th>
+                    <th>Dinner</th>
+                </tr>
+                <tr>
+                  <th>Monday-Thrusday</th>
+                  <th>11:30AM-3:00PM</th>
+                  <th>5:00PM-10:00PM</th>
+                </tr>
+                 <tr>
+                  <th>friday-saturday</th>
+                  <th>11:30AM-3:00PM</th>
+                  <th>5:00PM-11:00PM</th>
+                </tr>
+                 <tr>
+                  <th>Sunday</th>
+                  <th>12:00PM-4:00PM</th>
+                  <th>4:00PM-9:00PM</th>
+                </tr>
+                
+            </table>
+            <p><b><u>Contact information</u></b></p>
+            <p><i>123 Main Street</i></p>
+            <p><i>phone:-</i><a href="0512-4838">0512-4838</a></p>
+            
+            <p><i>e-mail-</i><a href="mail@forestdeck.in">mail@forestdeck.in</a></p>
+            <p><i>Website-</i><a href="https://forestdeck.in/">https://forestdeck.in/</a></p><hr>
 
-<p>@ 2025 Modi Vista Restaurant. all Right Reserved. | <a href=""></a>privacy policy | <a href=""></a>Terms of service</p>
+            <h1 align="center">📑MAKE A RESERVATION</h1>
+            <h3>Resevre your table today!(<i>All fields required</i>)</h3>
+            <p><b>personal information</b></p>
+            <p><b>Full Name</b></p>
+            <label></label>
+            <input type="text">
+            <p><b>E-mail</b></p>
+            <label></label>
+            <input type="text">
+            <p><b>Phone number</b></p>
+            <label></label>
+            <input type="text">
+            <p><b><u>Reservation details</u></b></p>
+            <p><b>Preffered date</b></p>
+            <label></label>
+            <input type="date">
+             <p><b>Preffered time</b></p>
+            <label></label>
+            <input type="time">
+             <p><b>Number of guest</b></p>
+            <select >
+                <option>
+                    <title>select no of guests...</title>
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >not confirm</option>
+                </option>
+            </select>
+            <p><b> Deitary Preferance</b></p>
+            <input type="checkbox">
+            <label>vegeterian</label><br>
+            <input type="checkbox">
+            <label> Non-vegeterian</label><br>
+             <input type="checkbox">
+            <label> Gluten Free</label>
+            <p><b>Any Special Requirement</b></p>
+            <textarea cols="40" rows="5" ></textarea><br>
+            <input type="submit" value="make reservation">
+            <input type="reset" value="clear form"><hr>
+            <h3>Follow us</h3>
+           <p> <a href="https://www.facebook.com/login/">📘Facebook</a>|<a href="https://www.facebook.com/login/">📸Instagram
+            <a href="https://www.facebook.com/login/">🐦Twitter</a></p><br>
+            <p>@2024 Forest deck restaurant All rights reserved|<a href="https://policies.google.com/privacy?hl=en-US"> Privacy Policy |</a>
+            <a href="https://policies.google.com/terms?hl=en-US">Terms of service</a></p>
+            
+            
+            
 
-<hr>
-</body>
-</html>
-
+            
+            
+        
