@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e0eafc);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    label {
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    input {
+      width: 60px;
+      padding: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .timer {
+      font-size: 5rem;
+      margin: 1.5rem 0 0.5rem;
+      color: #2c3e50;
+    }
+
+    #sessionType {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .controls button {
+      padding: 0.6rem 1.2rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .controls button:hover {
+      background-color: #2980b9;
+    }
+
+    .indicators {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    .settings {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pomodoro Timer</h1>
+
+  <div class="settings">
+    <label>Work: <input type="number" id="workDuration" value="25"> min</label>
+    <label>Short Break: <input type="number" id="shortBreak" value="5"> min</label>
+    <label>Long Break: <input type="number" id="longBreak" value="15"> min</label>
+    <label>Pomodoros before Long Break: <input type="number" id="cycleCount" value="4"></label>
+  </div>
+
+  <div class="timer" id="countdown">25:00</div>
+  <div id="sessionType">Work</div>
+
+  <div class="controls">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
+  <div class="indicators" id="cycleIndicators"></div>
+
+  <script>
+    let workDuration = 25;
+    let shortBreak = 5;
+    let longBreak = 15;
+    let cycleCount = 4;
+    let timer;
+    let timeLeft;
+    let isRunning = false;
+    let currentCycle = 0;
+    let currentSession = 'work';
+
+    function updateDurations() {
+      workDuration = parseInt(document.getElementById('workDuration').value) || 25;
+      shortBreak = parseInt(document.getElementById('shortBreak').value) || 5;
+      longBreak = parseInt(document.getElementById('longBreak').value) || 15;
+      cycleCount = parseInt(document.getElementById('cycleCount').value) || 4;
+    }
+
+    function startTimer() {
+      if (isRunning) return;
+      updateDurations();
+
+      if (!timeLeft) {
+        timeLeft = (currentSession === 'work' ? workDuration : (currentSession === 'short' ? shortBreak : longBreak)) * 60;
+      }
+
+      isRunning = true;
+      timer = setInterval(() => {
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          isRunning = false;
+          nextSession();
+          startTimer();
+        } else {
+          timeLeft--;
+          displayTime();
+        }
+      }, 1000);
+    }
+
+    function pauseTimer() {
+      clearInterval(timer);
+      isRunning = false;
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      isRunning = false;
+      timeLeft = null;
+      currentCycle = 0;
+      currentSession = 'work';
+      displayTime();
+      updateIndicators();
+      document.getElementById('sessionType').innerText = 'Work';
+    }
+
+    function nextSession() {
+      if (currentSession === 'work') {
+        currentCycle++;
+        if (currentCycle % cycleCount === 0) {
+          currentSession = 'long';
+        } else {
+          currentSession = 'short';
+        }
+      } else {
+        currentSession = 'work';
+      }
+      timeLeft = null;
+      updateIndicators();
+      document.getElementById('sessionType').innerText =
+        currentSession === 'work' ? 'Work' : (currentSession === 'short' ? 'Short Break' : 'Long Break');
+    }
+
+    function displayTime() {
+      let minutes = Math.floor(timeLeft / 60);
+      let seconds = timeLeft % 60;
+      document.getElementById('countdown').innerText =
+        `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    function updateIndicators() {
+      let indicators = '';
+      for (let i = 0; i < cycleCount; i++) {
+        indicators += i < currentCycle % cycleCount ? '🔴' : '⚪';
+      }
+      document.getElementById('cycleIndicators').innerText = indicators;
+    }
+
+    resetTimer();
+  </script>
+</body>
+</html>
